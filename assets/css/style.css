@@ -1,0 +1,127 @@
+
+body{
+	background: rgb(238,174,202);
+	font-family: 'Quicksand', sans-serif;	
+
+}
+
+#container{
+	width: 450px;
+	margin:200px auto;
+	cursor: pointer;
+	border:1px solid gray;	
+}
+
+
+h1{
+	color:#785964;
+	/*background-color:#785964;*/
+	font-size: 50px;
+	margin-top: 100px;
+	text-align: center;
+	line-height: 40px;
+
+}
+
+input{
+	font-size: 20px;
+	background-color: white;
+	width: 100%;
+	padding:16px 16px 16px 20px;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+
+input:focus{
+	background: #EAE2B7;
+	outline: none;
+	border:3px solid #D62828;
+}
+.completed {
+	text-decoration: line-through;
+}
+
+.complete{
+	color: green !important;
+	font-size: 30px !important;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+input ,ul{
+	color:#785964;
+}
+
+li{
+	background-color: white;
+	height: 50px;
+	line-height: 40px;
+}
+
+li:nth-child(odd){
+	background-color: #D5C7BC;
+}
+
+/*When we hover all li, we select i and make width 40px*/
+li:hover .trash{
+	width:50px;
+	opacity: 1.0;
+
+  
+}
+
+.trash{
+	background-color: #785964;
+	margin-right:  20px;
+	height: 50px;
+	width:0px;
+	color: white;
+	display: inline-block;
+	text-align: center;
+	transition: 0.2s linear;
+	opacity: 0;
+	vertical-align: middle;
+
+}
+
+
+
+.done{
+	float:right;
+	padding-top: 15px;
+}
+
+.fa-check{
+	 color:#fde2f1;
+	 padding-right: 10px;
+}
+
+span{
+	display: inline;
+}
+
+@media only screen and (max-width: 415px){
+		#container{
+			width:350px;
+
+		}
+
+}
+
+@media only screen and (max-width: 325px){
+		#container{
+			width:300px;
+			
+		}
+
+}
+
+
+
+
+
